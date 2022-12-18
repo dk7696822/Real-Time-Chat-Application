@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.dev.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Let's Connect</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="username-screen">
+        <h1 class="app-name">Let's Connect</h1>
+        <p class="enter-name">Please enter your name</p>
+        <input
+          id="inputMain"
+          class="input-main"
+          type="text"
+          name="username"
+          autofocus
+        />
+        <button id="enter-portal">Enter Room</button>
+        <div id="error">
+          <p></p>
+        </div>
+      </div>
+
+      <div id="chat" class="style-1">
+        <div id="output"></div>
+        <div id="feedback"></div>
+      </div>
+
+      <div id="enter-message">
+        <input
+          id="input-message"
+          class="input-main input-chat-room"
+          type="text"
+          name="message"
+        />
+        <button id="button-chat-room">Send</button>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/chat.js"></script>
+  </body>
+</html>
